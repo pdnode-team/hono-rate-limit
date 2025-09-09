@@ -23,7 +23,7 @@ import { rateLimiter } from "jsr:@yourname/hono-rate-limit"
 const app = new Hono()
 
 // Limit to 5 requests per 10 seconds per IP
-app.use("/api", rateLimiter({ limit: 5, window: 10_000 }))
+app.use("/api", rateLimiter(5, 10_000))
 
 app.get("/api", (c) => c.text("Hello, world!"))
 
