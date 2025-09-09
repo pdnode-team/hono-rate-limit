@@ -10,7 +10,7 @@
     "jsxImportSource": "hono/jsx"
   },
   "name": "@pdnode/pdnode-hono-rate-limiter",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "exports": "./src/rate-limit.ts"
 }
